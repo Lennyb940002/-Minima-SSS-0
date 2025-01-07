@@ -13,8 +13,13 @@ export function Navigation() {
   }, []);
 
   const baseClass = `px-4 py-2 transition-all duration-300 rounded-[20px] ${isSportPage
+<<<<<<< HEAD
     ? 'hover:bg-black hover:text-white hover:border hover:border-black'
     : 'hover:bg-white hover:text-black hover:border hover:border-white'
+=======
+      ? 'hover:bg-black hover:text-white hover:border hover:border-black'
+      : 'hover:bg-white hover:text-black hover:border hover:border-white'
+>>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7
     }`;
 
   const activeClass = isSportPage
@@ -32,6 +37,10 @@ export function Navigation() {
 
   const navItems = [
     { path: '/ecommerce', label: 'E-commerce' },
+<<<<<<< HEAD
+=======
+    { path: '/investissements', label: 'Investissements' },
+>>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7
     { path: '/suivi-personnel', label: 'Suivi Personnel' },
     { path: '/sceance-sport', label: 'Sceance de Sport' },
   ];

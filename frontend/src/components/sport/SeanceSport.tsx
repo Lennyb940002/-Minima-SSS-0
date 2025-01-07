@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
-=======
-import React from "react";
->>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7
 
 // Import des images
 import epaule from "../../image/epaule (1).png";
@@ -15,54 +11,30 @@ import biceps from "../../image/biceps (1).png";
 import muscles from "../../image/muscles.png";
 import dos2 from "../../image/dos (2).png";
 
-<<<<<<< HEAD
-=======
 // Composant BicepsExercise
->>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7
 const BicepsExercise = () => {
     return (
         <div className="max-w-3xl mx-auto p-6 space-y-6 bg-white shadow-lg rounded-lg">
             <div className="flex justify-between items-center">
                 <h1 className="text-3xl font-bold text-gray-800">Biceps</h1>
-<<<<<<< HEAD
-                <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full text-sm shadow-md transition duration-300 ease-in-out">
-                    Ajouter un exercice
-                </button>
-            </div>
-=======
                 <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full text-sm shadow-md">
                     Ajouter un exercice
                 </button>
             </div>
-
->>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7
             <div className="text-gray-700 text-sm space-y-2">
                 <p>Séance de biceps - <strong>Niveau:</strong> Débutant</p>
                 <p><strong>Fréquence:</strong> 1-2 fois par semaine</p>
                 <p><strong>Durée:</strong> Environ 30-45 minutes</p>
             </div>
-<<<<<<< HEAD
-            <div className="bg-gray-100 p-6 rounded-lg shadow-sm transition duration-300 ease-in-out hover:shadow-md">
-                <h2 className="text-lg font-semibold text-gray-800">
-                    Curl biceps avec haltères (Dumbbell Bicep Curl)
-                </h2>
-=======
-
             <div className="bg-gray-100 p-6 rounded-lg shadow-sm">
                 <h2 className="text-lg font-semibold text-gray-800">
                     Curl biceps avec haltères (Dumbbell Bicep Curl)
                 </h2>
-
->>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7
                 <div className="text-gray-700 mt-4">
                     <p><strong>Séries:</strong> 3</p>
                     <p><strong>Répétitions:</strong> 10-12</p>
                     <p><strong>Repos:</strong> 60 secondes</p>
                 </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7
                 <div className="mt-6">
                     <p className="font-medium text-gray-800">Spécialité :</p>
                     <p className="text-gray-600 text-sm leading-relaxed">
@@ -72,17 +44,6 @@ const BicepsExercise = () => {
                     </p>
                 </div>
             </div>
-<<<<<<< HEAD
-            <div className="flex justify-center space-x-4 mt-6">
-                <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full shadow-md transition duration-300 ease-in-out">
-                    Débutant
-                </button>
-                <button className="text-gray-600 hover:text-gray-800 px-6 py-2 transition duration-300 ease-in-out">
-                    Intermédiaire
-                </button>
-                <button className="text-gray-600 hover:text-gray-800 px-6 py-2 transition duration-300 ease-in-out">
-=======
-
             <div className="flex justify-center space-x-4 mt-6">
                 <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full shadow-md">
                     Débutant
@@ -91,7 +52,6 @@ const BicepsExercise = () => {
                     Intermédiaire
                 </button>
                 <button className="text-gray-600 hover:text-gray-800 px-6 py-2">
->>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7
                     Confirmé
                 </button>
             </div>
@@ -111,7 +71,6 @@ const modules = [
     { id: "dos2", image: dos2, title: "Dos 2" },
 ];
 
-<<<<<<< HEAD
 const Planning = () => {
     const jours = [
         {
@@ -181,11 +140,11 @@ const Planning = () => {
             {jours.map((jour, index) => (
                 <div key={index} className="mb-4">
                     <h3 className="bg-black pt-2 pb-2 rounded-lg font-semibold text-lg text-white mb-2 pl-2">{jour.jour}</h3>
-                    <div className=" w-max-[260px] h-[290px] grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-3 pl-0 pt-4">
+                    <div className="w-max-[260px] h-[290px] grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-3 pl-0 pt-4">
                         {jour.exercices.map((exercice, idx) => (
                             <div
                                 key={idx}
-                                className=" bg-black/70 p-3 rounded-lg shadow-md hover:bg-gray-50 transition-colors"
+                                className="bg-black/70 p-3 rounded-lg shadow-md hover:bg-gray-50 transition-colors"
                             >
                                 <p className="text-white text-sm font-medium text-gray-800">
                                     {exercice.nom}
@@ -205,15 +164,10 @@ const Planning = () => {
     );
 };
 
-const SeanceSport = () => {
-    const [hoveredModule, setHoveredModule] = useState(null);
-    const [activeModule, setActiveModule] = useState(null);
-=======
 // Composant principal
 export const SeanceSport = () => {
-    const [hoveredModule, setHoveredModule] = React.useState<string | null>(null);
-    const [activeModule, setActiveModule] = React.useState<string | null>(null);
->>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7
+    const [hoveredModule, setHoveredModule] = useState<string | null>(null);
+    const [activeModule, setActiveModule] = useState<string | null>(null);
 
     if (activeModule === "biceps") {
         return <BicepsExercise />;
@@ -228,24 +182,13 @@ export const SeanceSport = () => {
                         onMouseEnter={() => setHoveredModule(module.id)}
                         onMouseLeave={() => setHoveredModule(null)}
                         onClick={() => setActiveModule(module.id)}
-<<<<<<< HEAD
                         className={`relative flex flex-col items-center justify-center p-6 shadow-md transition-transform transform ${hoveredModule === module.id ? "bg-gray-200" : "bg-white"
                             } w-[380px] h-[320px] rounded-[25px] cursor-pointer`}
-=======
-                        className={`relative flex flex-col items-center justify-center p-6 shadow-md transition-transform transform ${hoveredModule === module.id ? " bg-gray-200" : "bg-white"
-                            } w-[380px] h-[260px] rounded-[25px] cursor-pointer`}
-
->>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7
                     >
-                        <img
-                            src={module.image}
-                            alt={module.title}
-<<<<<<< HEAD
-                            className="w-[141px] h-[141px] object-contain mb-2"
-                        />
+                        <img src={module.image} alt={module.title} className="w-[141px] h-[141px] object-contain mb-2" />
                         <p className="text-black text-sm font-medium mb-2">Niveau 0</p>
                         <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                            <div className="bg-black h-2.5 rounded-full" style={{ width: '0%' }}></div>
+                            <div className="bg-black h-2.5 rounded-full" style={{ width: "0%" }}></div>
                         </div>
                     </div>
                 ))}
@@ -256,13 +199,3 @@ export const SeanceSport = () => {
 };
 
 export default SeanceSport;
-=======
-                            className="w-[141px] h-[141px] object-contain mb-4"
-                        />
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
-};
->>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7

@@ -3,12 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'r
 import { AuthForm } from './components/auth/AuthForm';
 import { Header } from './components/layout/Header';
 import { EcommerceDashboard } from './components/dashboard/EcommerceDashboard';
-<<<<<<< HEAD
-import SeanceSport from "./components/sport/SeanceSport";
-=======
 import { InvestmentView } from './components/investment/InvestmentView';
-import { SeanceSport } from './components/sport/SeanceSport';
->>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7
+import SeanceSport from './components/sport/SeanceSport';
 
 // Composant pour gérer le contenu principal avec transition
 const MainContent = () => {
@@ -27,10 +23,7 @@ const MainContent = () => {
         <Routes>
           <Route path="/" element={<Navigate to="/ecommerce" replace />} />
           <Route path="/ecommerce" element={<EcommerceDashboard />} />
-<<<<<<< HEAD
-=======
           <Route path="/investissements" element={<InvestmentView />} />
->>>>>>> 028437f45dd9bc3cbb5be68474cb6a61283a50d7
           <Route path="/sceance-sport" element={<SeanceSport />} />
         </Routes>
       </main>

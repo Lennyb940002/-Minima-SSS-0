@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Page-1" id="WDRVITcvD2mHld8Jn1Gp">
-    <mxGraphModel dx="3590" dy="2887" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="2189" dy="2132" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -243,6 +243,20 @@
         </mxCell>
         <mxCell id="PsPLvPypxk53Q5T2BopA-79" value="Se connecter" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1520" y="-930" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PsPLvPypxk53Q5T2BopA-80" value="Extends" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=12;curved=1;exitX=0.293;exitY=0.114;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.682;entryY=0.929;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry x="-0.0036" width="160" relative="1" as="geometry">
+            <mxPoint x="1258" y="-1097" as="sourcePoint" />
+            <mxPoint x="890" y="-1150" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PsPLvPypxk53Q5T2BopA-81" value="Include" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=12;curved=1;entryX=0.049;entryY=0.608;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="PsPLvPypxk53Q5T2BopA-75" target="PsPLvPypxk53Q5T2BopA-76">
+          <mxGeometry x="-0.0506" y="1" width="160" relative="1" as="geometry">
+            <mxPoint x="1050" y="-800" as="sourcePoint" />
+            <mxPoint x="797" y="-732" as="targetPoint" />
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
